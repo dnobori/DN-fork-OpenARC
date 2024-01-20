@@ -48,19 +48,19 @@
 #endif /* __STDC__ */
 
 /* limits, macros, etc. */
-#define	BUFRSZ			1024	/* base temp buffer size */
+#define	BUFRSZ			32768	/* base temp buffer size */
 #define	BASE64SIZE(x)		(((x + 2) / 3) * 4)
 					/* base64 encoding growth ratio */
 #define MAXADDRESS		256	/* biggest user@host we accept */
-#define	MAXBUFRSZ		65536	/* max temp buffer size */
+#define	MAXBUFRSZ		131072	/* max temp buffer size */
 #define MAXCNAMEDEPTH		3	/* max. CNAME recursion we allow */
-#define MAXHEADERS		32768	/* buffer for caching headers */
+#define MAXHEADERS		65536	/* buffer for caching headers */
 #define MAXLABELS		16	/* max. labels we allow */
 #define MAXTAGNAME		8	/* biggest tag name */
 
 #define	NPRINTABLE		95	/* number of printable characters */
 
-#define ARC_MAXHEADER		4096	/* buffer for caching one header */
+#define ARC_MAXHEADER		32768	/* buffer for caching one header */
 #define	ARC_MAXHOSTNAMELEN	256	/* max. FQDN we support */
 
 /* defaults */
