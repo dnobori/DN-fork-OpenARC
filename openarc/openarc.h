@@ -42,7 +42,7 @@
 #endif /* !TRUE */
 
 /* defaults, limits, etc. */
-#define	BUFRSZ		1024
+#define	BUFRSZ		32768
 #define CONFIGOPTS	"Ac:flnp:P:rt:u:vV"
 #define	DEFCONFFILE	CONFIG_BASE "/openarc.conf"
 #define	DEFINTERNAL	"csl:127.0.0.1,::1"
@@ -53,7 +53,7 @@
 #define	LOCALHOST6	"::1"
 #define	MAXADDRESS	256
 #define	MAXARGV		65536
-#define	MAXBUFRSZ	65536
+#define	MAXBUFRSZ	131072
 #define	MAXHDRCNT	64
 #define	MAXHDRLEN	78
 #define	MAXSIGNATURE	1024
