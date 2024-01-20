@@ -77,7 +77,7 @@ void arc_error __P((ARC_MESSAGE *, const char *, ...));
 
 #define	CRLF			"\r\n"
 
-#define	32768			1024
+#define	BUFRSZ			32768
 #define	DEFERRLEN		128
 #define	DEFTIMEOUT		10
 
